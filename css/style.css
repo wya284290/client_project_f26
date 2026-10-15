@@ -1,0 +1,538 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 100;
+    color: #131516;
+    margin: 0;
+}
+
+.skip {
+    background-color: #FFFFFF;
+    color: #00274C;
+    padding: 8px;
+    position: absolute;
+    top: -1000px;
+    border: 2px solid #00274C;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.skip:focus {
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    place-items: stretch;
+    text-align: center;
+    overflow: auto;
+    background-color: #FFCB05;
+    color: #00274C;
+    grid-template-rows: 100px 1fr;
+}
+
+nav li:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+header>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 40%;
+    padding-left: 5%;
+    margin: 0;
+    text-align: left;
+    background-color: #00274C;
+    color: #FFCB05
+}
+
+h2 {
+    font-size: 28px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.list li strong {
+    display: block;
+    padding-bottom: 5%;
+}
+
+.list li {
+    display: block;
+    padding: 5%;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-right: 5%;
+}
+
+.benefits {
+    background-color: #FFFFFF;
+    border: 2px solid #00274C;
+    border-radius: 10px;
+}
+
+.benefits:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+#start {
+    background-color: #FFCB05;
+    text-align: center;
+    color: #00274C;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+article a {
+    text-decoration: none;
+}
+
+.guide a {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #FFCB05;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.guide {
+    display: grid;
+    grid-gap: 20px;
+    padding: 2%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.guide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h3 a {
+    text-decoration: none;
+    margin-left: 5%;
+    color: #00274C;
+    display: block;
+    margin-right: 5%;
+    border:#00274C 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h3 a p {
+    margin:0;
+}
+
+.description {
+    position: absolute;
+    top: -1000px;
+}
+
+h3 a:hover {
+    background-color: #FFCB05;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+article:hover .description {
+    position:static;
+}
+
+aside {
+    background-color:#FFCB05;
+    color: #00274C;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+aside div a {
+    text-decoration: none;
+    margin: 5%;
+    color: #00274C;
+    border:#00274C 2px solid;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+aside div a:hover {
+    background-color: #FFFFFF;
+}
+
+address a {
+    margin: 5%;
+}
+
+section article h3 {
+    margin-left: 0;
+}
+
+/* prep */
+
+.prep_goal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    border-top: #00274C 1px solid;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin-right: 5%;
+}
+
+.question {
+    list-style-type: square;
+    display:grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+}
+
+#mhi, #AR, #UX, #student-design, #lwb, #sign {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.consider {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.prep_h3 {
+    margin-left: 5%;
+}
+
+.resource-list {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-top: #00274C 1px solid;
+    border-bottom: #00274C 1px solid;
+    padding: 24px 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+.resource-list li {
+    padding: 20px;
+    border: 2px solid #00274C;
+    border-radius: 10px;
+}
+
+.resource-list a {
+    color: #00274C;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.resource-list li:hover {
+    background-color: #FFCB05;
+}
+
+.phase_2 {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+.approach {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.phase_1 {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.build_trust {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* During page */
+.during-page .during-intro {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.during-page .during-phase {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.during-page .during-goals, .during-page .during-process, .during-page .during-resources {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.during-page article h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+    font-weight: 700;
+}
+.during-page .during-goals ul {
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+.during-page .during-goals li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-top: 1px solid #00274C;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.during-page .during-goals strong {
+    color: #00274C;
+    font-weight: 700;
+}
+.during-page .during-process ol {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 24px;
+}
+.during-page .during-process li {
+    padding: 16px 12px;
+    border-bottom: 1px solid #00274C;
+}
+
+.during-page .during-challenges {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.during-page .during-questions {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.during-page .during-questions ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: square;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+}
+.during-page .during-resources ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 24px 0;
+    border-top: 1px solid #00274C;
+    border-bottom: 1px solid #00274C;
+}
+.during-page .during-resources li {
+    padding: 20px;
+    border: 2px solid #00274C;
+    border-radius: 10px;
+}
+.during-page .during-resources a {
+    color: #00274C;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.during-page .during-resources li:hover {
+    background-color: #FFCB05;
+}
+.during-page .during-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.during-page .during-next {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.during-page .during-next div {
+    margin: 24px 5%;
+}
+.during-page .during-next div a {
+    display: block;
+    margin: 0;
+    padding: 16px;
+    font-weight: 700;
+}
+
+
+/* After */
+.after .close_project,
+.after .career {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.after article h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+    font-weight: 700;
+}
+.after .close_goal, .after .handoff, .after .close_resource, .after .portfolio, .after .career_resource {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.after .close_goal ul {
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+.after .close_goal li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #00274C;
+}
+.after .close_goal strong {
+    font-weight: 700;
+}
+.after .handoff ol, .after .portfolio ol {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 24px;
+}
+.after .handoff li, .after .portfolio li {
+    padding: 16px 12px;
+    border-bottom: 1px solid #00274C;
+}
+
+.after .reflect {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.after .after_question {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.after .after_question ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: square;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+}
+.after .impact {
+    padding-top: 2%;
+}
+.after .skills {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.after .connections {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.after .close_resource ul, .after .career_resource ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 24px 0;
+}
+.after .close_resource li, .after .career_resource li {
+    padding: 20px;
+    border: 2px solid #00274C;
+    border-radius: 10px;
+}
+.after .close_resource a, .after .career_resource a {
+    color: #00274C;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.after .close_resource li:hover, .after .career_resource li:hover {
+    background-color: #FFCB05;
+}
+.after .after_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.after aside {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.after aside a {
+    color: #00274C;
+}

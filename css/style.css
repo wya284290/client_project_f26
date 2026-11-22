@@ -536,3 +536,66 @@ section article h3 {
 .after aside a {
     color: #00274C;
 }
+
+@media only screen and (min-width: 768px) {
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .list > :nth-child(even) {
+        grid-column: span 2;
+    }
+    .featured-programs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 12px;
+    }
+    
+    .featured-programs>h2, .featured-programs>p {
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    .featured-programs>h2 {
+        margin-top: 5%;
+    }
+
+    .featured-programs h3, .featured-programs h3 a {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list > :nth-child(even), .list > :nth-child(odd) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .featured-programs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .featured-programs>h2, .featured-programs>p {
+        grid-column: span 3;
+    }
+    .resource-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .resource-list > :nth-child(even) {
+        grid-column: span 3;
+    }
+    .resource-list> :nth-child(odd) {
+        grid-column: span 2;
+    }
+    .during-page .during-resources ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .after .close_resource ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .after .close_resource ul, .after .career_resource ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
